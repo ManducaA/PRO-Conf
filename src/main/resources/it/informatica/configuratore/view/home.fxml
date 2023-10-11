@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<BorderPane fx:id="back" maxHeight="342.0" maxWidth="400.0" minHeight="342.0" minWidth="400.0" prefHeight="342.0" prefWidth="400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.informatica.configuratore.controller.HomeController">
+   <top>
+      <AnchorPane fx:id="top" minHeight="30.0" minWidth="300.0" onMouseDragged="#setOnMouseDragged" onMousePressed="#setOnMousePressed" prefHeight="30.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="themeButton" layoutY="6.0" mnemonicParsing="false" onAction="#changeTheme" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+             <Button fx:id="close" mnemonicParsing="false" onAction="#onCloseClick" prefHeight="25.0" prefWidth="14.0" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                 <graphic>
+                     <FontIcon iconLiteral="mdi2c-close" iconSize="15" />
+                 </graphic>
+             </Button>
+            <MenuBar fx:id="mb" layoutX="152.0" style="-fx-font-weight: bold;">
+              <menus>
+                <Menu fx:id="editMenu" mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem fx:id="customize" mnemonicParsing="false" onAction="#onPersonalizzaClick" text="Personalizza" />
+                  </items>
+                </Menu>
+                <Menu fx:id="help" mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" onAction="#onAboutClick" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+       <AnchorPane minHeight="317.0" minWidth="300.0" prefHeight="317.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+           <Button fx:id="New" layoutX="51.0" layoutY="158.0" mnemonicParsing="false" onAction="#onNuovaClick" prefHeight="60.0" prefWidth="120.0" text="Nuova Configurazione" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="51.0" />
+           <Button id="homeButtons" fx:id="Carica" layoutX="218.0" layoutY="165.0" mnemonicParsing="false" onAction="#onCaricaClick" prefHeight="46.0" prefWidth="133.0" text="Carica Configurazione" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="49.0">
+               <graphic>
+                   <FontIcon fx:id="loadC" iconLiteral="mdi2f-folder-edit" iconSize="20" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </graphic></Button>
+           <Button id="homeButtons" fx:id="Login" alignment="BOTTOM_CENTER" centerShape="false" contentDisplay="TOP" graphicTextGap="0.0" layoutX="156.0" layoutY="231.0" maxHeight="58.0" minHeight="39.0" mnemonicParsing="false" onAction="#onLoginClick" prefHeight="55.0" prefWidth="88.0" scaleShape="false" style="-fx-padding: 10;" text="Accedi" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <graphic>
+                   <FontIcon fx:id="account" iconLiteral="mdi2a-account-circle-outline" iconSize="21" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" />
+               </graphic>
+               <opaqueInsets>
+                   <Insets />
+               </opaqueInsets></Button>
+         <Label layoutX="138.0" layoutY="62.0" text="Benvenuto">
+            <font>
+               <Font name="Arial Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label layoutX="139.0" layoutY="102.0" text="Scopri il nostro mondo" />
+         <ImageView fitHeight="63.0" fitWidth="128.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/auto-sinistra.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="92.0" fitWidth="137.0" layoutX="274.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/auto-destra.png" />
+            </image>
+         </ImageView>
+       </AnchorPane>
+   </center>
+    
+</BorderPane>

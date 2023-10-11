@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane fx:id="back" maxHeight="665.0" maxWidth="879.0" minHeight="550.0" minWidth="700.0" prefHeight="629.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.informatica.configuratore.controller.PersController">
+    <children>
+        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane fx:id="top" onMouseDragged="#setOnMouseDragged" onMousePressed="#setOnMousePressed" prefHeight="37.0" prefWidth="600.0">
+                    <children>
+                        <Button fx:id="close" layoutX="23.0" maxHeight="24.0" maxWidth="31.0" minHeight="24.0" minWidth="31.0" mnemonicParsing="false" onAction="#onCloseClick" prefHeight="24.0" prefWidth="31.0" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <graphic>
+                                <FontIcon iconLiteral="mdi2c-close" iconSize="15" />
+                            </graphic>
+                        </Button>
+                        <MenuBar fx:id="mb" layoutX="392.0">
+                            <menus>
+                                <Menu mnemonicParsing="false" text="Edit">
+                                    <items>
+                                        <MenuItem fx:id="customize" mnemonicParsing="false" onAction="#onActionClick" text="Personalizza" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Help">
+                                    <items>
+                                        <MenuItem fx:id="about" mnemonicParsing="false" onAction="#onAboutClick" text="About" />
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                        <Button fx:id="themeButton" mnemonicParsing="false" onAction="#changeTheme">
+                            <graphic>
+                                <FontIcon fx:id="themeIcon" strokeType="OUTSIDE" strokeWidth="0.0" />
+                            </graphic>
+                        </Button>
+                    </children></AnchorPane>
+                <AnchorPane prefHeight="86.0" prefWidth="600.0">
+                    <children>
+                        <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="286.0" layoutY="26.0" text="C'è qualcosa di sbagliato" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font name="Marlett" size="18.0" />
+                            </font>
+                        </Label>
+                  <TextField fx:id="searchText" layoutX="712.0" layoutY="31.0" prefHeight="25.0" prefWidth="153.0" promptText="Cerca per Nome..." style="-fx-border-radius: 10; -fx-background-radius: 10;" AnchorPane.rightAnchor="14.0" />
+                  <Button layoutX="837.0" layoutY="31.0" mnemonicParsing="false" onAction="#onSearchClick" style="-fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.rightAnchor="14.0">
+                     <graphic>
+                        <FontIcon iconLiteral="fas-search" />
+                     </graphic>
+                  </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="391.0" prefWidth="879.0">
+               <children>
+                  <TableView fx:id="Configurations" cacheShape="false" centerShape="false" fixedCellSize="0.0" layoutX="26.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" scaleShape="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="id" editable="false" maxWidth="70.0" prefWidth="48.0" resizable="false" style="-fx-border-radius: 5; -fx-background-radius: 5;" text="id" />
+                      <TableColumn fx:id="name" editable="false" maxWidth="200.0" prefWidth="153.0" resizable="false" style="-fx-border-radius: 5; -fx-border-radius: 5; -fx-background-radius: 5;" text="Nome" />
+                      <TableColumn fx:id="make" editable="false" maxWidth="182.0" prefWidth="150.0" resizable="false" style="-fx-border-radius: 5; -fx-background-radius: 5;" text="Marca" />
+                        <TableColumn fx:id="model" editable="false" maxWidth="232.0" prefWidth="147.0" resizable="false" style="-fx-border-radius: 5; -fx-background-radius: 5;" text="Modello" />
+                        <TableColumn fx:id="colour" editable="false" maxWidth="83.0" prefWidth="83.0" resizable="false" style="-fx-border-radius: 5; -fx-background-radius: 5;" text="Colore" />
+                        <TableColumn fx:id="wheels" editable="false" maxWidth="83.0" prefWidth="83.0" resizable="false" style="-fx-border-radius: 5; -fx-background-radius: 5;" text="Cerchi" />
+                        <TableColumn fx:id="inside" editable="false" maxWidth="83.0" prefWidth="83.0" resizable="false" style="-fx-border-radius: 5; -fx-background-radius: 5;" text="Interni" />
+                        <TableColumn fx:id="price" editable="false" maxWidth="110.0" prefWidth="110.0" style="-fx-background-radius: 5;" text="Prezzo €" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+            </children>
+        </VBox>
+        <Button fx:id="New" layoutX="691.0" layoutY="524.0" mnemonicParsing="false" onAction="#onNuovaClick" prefHeight="86.0" prefWidth="168.0" text="Nuova Configurazione" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="edit" layoutX="407.0" layoutY="558.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="31.0" prefWidth="31.0">
+         <graphic>
+            <FontIcon fx:id="editIcon" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic></Button>
+      <Button fx:id="delete" layoutX="445.0" layoutY="558.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="31.0" prefWidth="31.0">
+         <graphic>
+            <FontIcon fx:id="deleteIcon" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic></Button>
+      <Label fx:id="tipLabel" layoutX="40.0" layoutY="565.0" styleClass="tip" text="* Premi su una Configurazione per apportare delle modifiche" />
+      <Button contentDisplay="CENTER" graphicTextGap="0.0" layoutX="70.0" layoutY="14.0" mnemonicParsing="false" onAction="#gameStart" prefHeight="37.0" prefWidth="119.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="103.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/carsprite.gif" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

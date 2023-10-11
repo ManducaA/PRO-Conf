@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane fx:id="back" minHeight="270.0" prefHeight="270.0" prefWidth="560.0" style="-fx-border-color: #000000;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.informatica.configuratore.controller.CustomizeController">
+   <children>
+      <Label layoutX="26.0" layoutY="105.0" prefHeight="43.0" prefWidth="147.0" style="-fx-border-color: #4e5cdf; -fx-border-width: 3; -fx-border-radius: 10;" textAlignment="JUSTIFY">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Label fx:id="typeface" layoutX="34.0" layoutY="105.0" prefHeight="43.0" prefWidth="100.0" text="Typeface">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="103.0" prefHeight="43.0" prefWidth="110.0" text="Theme">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="105.0" prefHeight="43.0" prefWidth="137.0" style="-fx-border-color: #4e5cdf; -fx-border-radius: 10; -fx-border-width: 3;" />
+      <MenuButton fx:id="colorChooser" layoutX="384.0" layoutY="105.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="130.0" style="-fx-background-color: #4e5cdf; -fx-border-color: transparent; -fx-background-radius: 12;" styleClass="menubutton">
+        <items>
+          <MenuItem fx:id="defaultColor" mnemonicParsing="false" onAction="#onDefaultColorClick">
+               <graphic>
+                  <Rectangle fx:id="color1" arcHeight="5.0" arcWidth="5.0" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="color2Menu" mnemonicParsing="false" onAction="#onSecondColorClick">
+               <graphic>
+                  <Rectangle fx:id="color2" arcHeight="5.0" arcWidth="5.0" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+               </graphic>
+            </MenuItem>
+            <MenuItem fx:id="color3Menu" mnemonicParsing="false" onAction="#onThirdColorClick">
+               <graphic>
+                  <Rectangle fx:id="color3" arcHeight="5.0" arcWidth="5.0" height="30.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+               </graphic>
+            </MenuItem>
+        </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      <Button fx:id="exitButton" graphicTextGap="8.0" layoutX="187.0" layoutY="210.0" mnemonicParsing="false" onAction="#onExitClick" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #b0dd82;" text="Annulla">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <FontIcon iconColor="#4d4848" iconLiteral="mdi2u-undo-variant" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </graphic>
+      </Button>
+      <MenuButton fx:id="fontChooser" layoutX="118.0" layoutY="105.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="130.0" style="-fx-background-color: #4e5cdf; -fx-border-color: transparent; -fx-background-radius: 12;" styleClass="menubutton">
+        <items>
+          <MenuItem fx:id="Def" mnemonicParsing="false" onAction="#onDefaultClick" text="Default" />
+          <MenuItem fx:id="Aleg" mnemonicParsing="false" onAction="#onAlegreyaClick" text="Alegreya Sans SC" />
+          <MenuItem fx:id="Rob" mnemonicParsing="false" onAction="#onRobotoClick" text="Roboto" />
+        </items>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </MenuButton>
+      <Button fx:id="saveButton" graphicTextGap="8.0" layoutX="287.0" layoutY="211.0" mnemonicParsing="false" onAction="#onSaveClick" style="-fx-background-color: #b0dd82;" text="Salva" AnchorPane.bottomAnchor="24.0" AnchorPane.rightAnchor="188.0">
+         <graphic>
+            <FontIcon iconColor="#4d4848" iconLiteral="mdi2c-content-save" iconSize="22" strokeType="OUTSIDE" strokeWidth="0.0" text="󰆓" />
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane fx:id="back" prefHeight="339.0" prefWidth="350.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="it.informatica.configuratore.controller.LoginController">
+   <children>
+      <Label id="logTitle" fx:id="title" alignment="CENTER" layoutY="14.0" text="LOGIN/REGISTRAZIONE" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Impact" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameField" alignment="CENTER" layoutX="76.0" layoutY="119.0" prefHeight="27.0" prefWidth="200.0" promptText="Username" AnchorPane.rightAnchor="74.0" />
+      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="76.0" layoutY="189.0" prefHeight="27.0" prefWidth="200.0" promptText="Password" AnchorPane.rightAnchor="74.0" />
+      <HBox layoutX="86.0" layoutY="256.0" prefHeight="45.0" prefWidth="179.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+
+                        <Button fx:id="Registrati" mnemonicParsing="false" onAction="#registrati" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <graphic>
+                        <FontIcon fx:id="regIcon" iconLiteral="mdi2a-account-plus-outline" iconSize="28" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="log" mnemonicParsing="false" onAction="#login" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon fx:id="logIcon" iconLiteral="mdi2a-account-arrow-right" iconSize="28" tabSize="0" textAlignment="CENTER" wrappingWidth="60.0">
+                           <font>
+                              <Font size="1.0" />
+                           </font>
+                        </FontIcon>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Button fx:id="idea" layoutX="100.0" layoutY="312.0" mnemonicParsing="false" onAction="#onIdeaClick" prefHeight="8.0" prefWidth="151.0" text="ho cambiato idea" AnchorPane.bottomAnchor="0.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="close" alignment="BASELINE_LEFT" contentDisplay="CENTER" maxHeight="17.0" maxWidth="17.0" minHeight="17.0" minWidth="17.0" mnemonicParsing="false" onAction="#onCloseClick" prefHeight="17.0" prefWidth="17.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="76.0" layoutY="102.0" text="Username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="76.0" layoutY="172.0" text="Password">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+      </Label>
+      <AnchorPane fx:id="linea" layoutX="75.0" layoutY="59.0" prefHeight="8.0" prefWidth="270.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="65.0" />
+   </children>
+</AnchorPane>

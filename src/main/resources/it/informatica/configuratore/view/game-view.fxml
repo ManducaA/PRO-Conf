@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="500.0" maxWidth="500.0" minHeight="388.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.informatica.configuratore.controller.GameController">
+   <children>
+      <ImageView fx:id="mainRoad" fitHeight="500.0" fitWidth="500.0" layoutX="100.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fx:id="secondaryRoad" fitHeight="500.0" fitWidth="500.0" layoutX="500.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="mainCar" fitHeight="50.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="firstOpponent" fitHeight="50.0" fitWidth="93.0" layoutX="500.0" layoutY="130" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="secondOpponent" fitHeight="50.0" fitWidth="93.0" layoutX="1600.0" layoutY="180" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="thirdOpponent" fitHeight="50.0" fitWidth="93.0" layoutX="700.0" layoutY="260" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="forthOpponent" fitHeight="50.0" fitWidth="93.0" layoutX="1000.0" layoutY="310" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="crash" fitHeight="102.0" fitWidth="168.0" layoutX="220.0" layoutY="500" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane fx:id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1050.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.informatica.configuratore.controller.ConfController">
+   <children>
+      <VBox fx:id="vb" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="anchor" minHeight="35.0" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <HBox layoutX="-46.0" layoutY="-25.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="50.0" prefWidth="192.0">
+                           <children>
+                              <Button fx:id="cambia" layoutX="20.0" layoutY="5.0" mnemonicParsing="false" onAction="#onCambiaClick" text="Cambia Modello" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="top" onMouseDragged="#setOnMouseDragged" onMousePressed="#setOnMousePressed" prefHeight="50.0" prefWidth="728.0" />
+                        <AnchorPane prefHeight="50.0" prefWidth="321.0">
+                           <children>
+                              <Button fx:id="prossimo" layoutX="20.0" layoutY="5.0" mnemonicParsing="false" onAction="#onProssimoClick" prefHeight="40.0" prefWidth="211.0" text="Vai a i Cerchi" AnchorPane.topAnchor="8.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children></AnchorPane>
+                        <AnchorPane minWidth="47.0" prefHeight="50.0" prefWidth="47.0">
+                           <children>
+                              <Button fx:id="close" layoutX="16.0" mnemonicParsing="false" onAction="#onCloseClick">
+                                 <graphic>
+                                    <FontIcon iconLiteral="mdi2c-close" iconSize="15" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ima" minHeight="600.0" minWidth="1050.0" prefHeight="600.0" prefWidth="1050.0">
+               <children>
+                  <VBox fx:id="vboximg" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="imv" fitHeight="600.0" fitWidth="1050.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                  </ImageView>
+                     </children>
+                  </VBox>
+                  <AnchorPane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="next" layoutX="1009.0" layoutY="287.0" mnemonicParsing="false" onAction="#onNextOutsideClick" style="-fx-background-color: transparent; -fx-border-color: transparent;" AnchorPane.rightAnchor="14.0">
+                           <graphic>
+                              <FontIcon fx:id="nextIcon" iconLiteral="mdi2a-arrow-right-circle" iconSize="30" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="previous" layoutX="14.0" layoutY="287.0" mnemonicParsing="false" onAction="#onPreviousOutsideClick" style="-fx-background-color: transparent; -fx-border-color: transparent;" AnchorPane.leftAnchor="14.0">
+                           <graphic>
+                              <FontIcon fx:id="previousIcon" iconLiteral="mdi2a-arrow-left-circle" iconSize="30" text="󰳝" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="600.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane maxWidth="525.0" minWidth="525.0" prefHeight="200.0" prefWidth="525.0">
+                           <children>
+                              <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane prefHeight="51.0" prefWidth="525.0">
+                                       <children>
+                                          <Label fx:id="optionalLabel" alignment="CENTER" contentDisplay="CENTER" prefWidth="525.0" text="" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <font>
+                                                <Font name="System Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="scelte" prefHeight="200.0" prefWidth="525.0">
+                                       <children>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="buttonOptional1" layoutX="40.0" layoutY="28.0" mnemonicParsing="false" onAction="#onColore1Click" AnchorPane.leftAnchor="40.0">
+                                                         <graphic>
+                                                            <Rectangle fx:id="optional1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20; -fx-stroke-width: 0;" width="110.0" />
+                                                         </graphic>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children></AnchorPane>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="buttonOptional2" layoutX="27.0" layoutY="28.0" mnemonicParsing="false" onAction="#onColore2Click">
+                                                         <graphic>
+                                                            <Rectangle fx:id="optional2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20; -fx-stroke-width: 0;" width="110.0" />
+                                                         </graphic>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children></AnchorPane>
+                                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="buttonOptional3" layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#onColore3Click">
+                                                         <graphic>
+                                                            <Rectangle fx:id="optional3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="106.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 20; -fx-arc-width: 20; -fx-stroke-width: 0;" width="110.0" />
+                                                         </graphic>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children></AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxWidth="525.0" minWidth="525.0" prefHeight="200.0" prefWidth="525.0">
+                           <children>
+                              <ListView fx:id="list" layoutX="29.0" layoutY="26.0" prefHeight="200.0" prefWidth="459.0" AnchorPane.bottomAnchor="-26.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="26.0">
+                                 <padding>
+                                    <Insets left="20.0" top="20.0" />
+                                 </padding></ListView>
+                              <Label fx:id="priceDisplay" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="78.0" layoutY="160.0" prefHeight="40.0" prefWidth="525.0" textAlignment="RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                     </children></HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
