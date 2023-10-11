@@ -1,0 +1,331 @@
+* {
+  -fx-text-fill: textColor;
+}
+
+#back {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-color: primaryBackgroundColor;
+    -fx-border-color: #191d21;
+}
+.dialog-pane, .dialog-pane:header .header-panel {
+    -fx-background-color: secondaryBackgroundColor;
+}
+
+.button {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+}
+.button:hover {
+    -fx-effect: null;
+}
+
+.dialog-pane .button {
+    -fx-background-color: yellow;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( gaussian, rgba(252,164,12,0.7), 8.0, 0.0, 0.0, 0);
+}
+.dialog-pane .button:hover {
+    -fx-background-color: orange;
+    -fx-effect: null;
+}
+
+
+#New {
+    -fx-background-color: buttonFocusColor;
+    -fx-background-radius: 10;
+    -fx-text-fill: newTextFill;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+}
+#New:hover {
+    //-fx-background-insets: 2;
+    -fx-effect: null;
+}
+
+
+#homeButtons {
+    -fx-background-color: homeButtonsColor;
+    -fx-text-fill: secondaryTextColor;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+}
+#homeButtons:hover {
+    -fx-background-color: primarySelectionColor;
+    -fx-font-weight: bold;
+    -fx-effect: null;
+}
+
+#mb {
+    -fx-border-radius: 15px;
+    -fx-background-radius:15px;
+    -fx-background-color:  menuBarColor;
+    -fx-font-weight: bold;
+}
+.menu {
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+.menu:hover {
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-background-color: primarySelectionColor;
+}
+.menu:showing {
+    -fx-background-color: primarySelectionColor;
+}
+.context-menu {
+    -fx-background-color:homeButtonsColor;
+    -fx-background-radius: 15;
+}
+.menu-item{
+    -fx-background-color: homeButtonsColor;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+.menu-item:hover {
+    -fx-background-color: primarySelectionColor;
+}
+
+#About * {
+    -fx-background-color: transparent;
+    -fx-fill: blue;
+    -fx-font-weight: bold;
+}
+
+
+#close {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 10px;
+    -fx-background-color: red;
+    -fx-effect: null;
+}
+#themeButton {
+    -fx-border-radius: 7px;
+    -fx-background-radius: 10px;
+    -fx-background-color: black;
+    -fx-effect: null;
+}
+
+.chooserColor {
+    -fx-background-color: chooserBackgroundColor;
+}
+
+#euro {
+    -fx-fill: euroIconColor;
+}
+
+#title {
+    -fx-font-family: 'Impact';
+    -fx-font-size: 36px;
+    -fx-text-fill: titlefill;
+}
+
+
+#log, #linea {
+ -fx-background-color:  logbackground;
+}
+
+#Registrati {
+    -fx-background-color: regBackground;
+}
+
+#Registrati:hover{
+    -fx-background-color: logbackground;
+}
+#regIcon {
+-fx-fill: regIconColor;
+}
+#logIcon {
+-fx-fill: logIconColor;
+}
+#logIcon:hover {
+-fx-fill: logIconHoverColor;
+}
+
+
+#usernameField, #passwordField {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: textfieldbackground;
+    -fx-border-color:  textfieldborder;
+    -fx-text-fill: textfieldTextColor;
+}
+
+
+#idea {
+    -fx-background-color: ideahoverbackground;
+}
+
+#lv {
+-fx-background-color:transparent;
+}
+.list-cell {
+-fx-background-color:transparent;
+}
+
+#first, #second, #third, #forth, #fifth, #sixth, #vfirst, #vsecond, #vthird, #vforth, #vfifth, #vsixth {
+    -fx-background-color: transparent;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+}
+
+#first:hover, #second:hover, #third:hover {
+    -fx-background-color: chooseHoverColor;
+}
+
+.choosetext {
+    -fx-text-fill: chooseTextColor;
+}
+
+#buttonOptional1, #buttonOptional2, #buttonOptional3 {
+    -fx-background-color: transparent;
+    -fx-border-color : transparent;
+    -fx-border-radius : 15px;
+    -fx-background-radius: 15px;
+}
+#list {
+  -fx-background-color: listBackgroundColor;
+  -fx-background-insets: 12;
+-fx-border-radius: 15px;
+-fx-background-radius: 15px;
+}
+#priceDisplay {
+-fx-text-fill: euroIconColor;
+}
+
+#cambia {
+    -fx-min-width: 110px;
+    -fx-min-height: 40px;
+    -fx-background-color: cambiabackground;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-text-fill: cambiatextfill;
+}
+
+#cambia:hover {
+    -fx-background-color: cambiahoverbackground;
+}
+
+#Ricambia {
+    -fx-border-color: black;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: linear-gradient(from 10% 50% to 50% 100%, orange, lightblue);
+    -fx-margin-top: 30px;
+}
+#Ricambia:hover {
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: linear-gradient(from 40% 50% to 50% 100%, lightblue, orange);
+    -fx-margin-top: 30px;
+}
+
+#Ricambia2 {
+    -fx-border-color: black;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: lightblue;
+    -fx-margin-top: 30px;
+}
+#Ricambia2:hover {
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: orange;
+    -fx-margin-top: 30px;
+}
+
+#Ricambia3 {
+    -fx-border-color: black;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: linear-gradient(from 10% 50% to 50% 100%, lightblue, orange);
+    -fx-margin-top: 30px;
+}
+#Ricambia3:hover {
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: linear-gradient(from 10% 50% to 50% 100%, orange, lightblue);
+    -fx-margin-top: 30px;
+}
+
+#prossimo {
+    -fx-background-color: prossimobackground;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+#prossimo:hover {
+    -fx-background-color: prossimohoverbackground;
+}
+
+#Conferma {
+    -fx-background-color:  confermabackground;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+#Conferma:hover {
+    -fx-background-color:  confermahoverbackground;
+    -fx-text-fill: confermahovertextfill;
+}
+
+#esporta {
+    -fx-background-color: esportaBackgroundColor;
+    -fx-text-fill: esportaTextFill;
+}
+#esporta:hover {
+    -fx-background-color: esportaBackgroundHoverColor;
+    -fx-text-fill: white;
+}
+
+#area {
+    -fx-background-color: transparent;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+#area:hover {
+    -fx-background-color: areaBackgroundHoverColor;
+    -fx-effect: null;
+}
+#homeIcon {
+    -fx-fill: homeIconColor;
+}
+
+
+
+
+#edit {
+    -fx-background-color: buttonFocusColor;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10, 0, -2, 0 );
+}
+#delete {
+    -fx-background-color: red;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10, 0, 2, 0 );
+}
+#edit:hover, #delete:hover {
+    -fx-effect: null;
+}
+
+
+
+
+
+#Configurations {
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+#colorChooser, #fontChooser {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+}
+#colorChooser:hover, #fontChooser:hover{
+    -fx-effect: null;
+}
+

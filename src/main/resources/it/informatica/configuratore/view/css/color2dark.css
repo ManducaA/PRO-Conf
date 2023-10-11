@@ -1,0 +1,134 @@
+* {
+    primaryBackgroundColor: #191d21;
+    secondaryBackgroundColor: #24282b;
+
+    buttonFocusColor: blue;
+
+    primarySelectionColor: #004ec4;
+    secondarySelectionColor: #004ec4;
+    tertiarySelectionColor: #004ec4;
+
+    imagesColor: #dcdcdd;
+    textFocusColor: #dcdcdd;
+    textColor: #dcdcdd;
+    primaryTextColor: #191d21;
+    secondaryTextColor: #191d21;
+
+    textFieldColor: black;
+    selectedTextColor: #dcdcdd;
+    lineColor: #b3b3b3;
+    separatorColor: #004ec4;
+
+    listBackgroundColor: #b7b043;
+
+    menuBarColor: #726b2a;
+    menuColor: black;
+
+    homeButtonsColor: #a59a3d;
+    newTextFill: white;
+
+    chooseHoverColor: #a59a3d;
+    chooseTextColor: antiquewhite;
+    chooserBackgroundColor: #1A4CC9;
+
+
+    titlefill: white;
+
+    barcolor: lightblue;
+
+    ideahoverbackground: black;
+    ideahoverfill: dodgerblue;
+
+    cambiabackground: #a59a3d;
+    cambiahoverbackground: #fce705;
+    cambiatextfill: primaryTextColor;
+
+    prossimobackground: #cac64a;
+    prossimohoverbackground: #e8df72;
+
+    confermabackground: dodgerblue;
+    confermahoverbackground: #1900ff;
+    confermahovertextfill: antiquewhite;
+
+    esportaBackgroundColor: homeButtonsColor;
+    esportaBackgroundHoverColor: buttonFocusColor;
+    esportaTextFill: primaryTextColor;
+
+    textfieldbackground: white;
+    textfieldborder: white;
+    textfieldTextColor: blue;
+
+    euroIconColor: white;
+
+    regBackground: #0f0f7f;
+    logbackground: homeButtonsColor;		//colore per log e linea
+    regIconColor: white;
+    logIconColor: white;
+    logIconHoverColor: primaryBackgroundColor;
+
+
+    areaBackgroundHoverColor: #a59a3d;
+    homeIconColor: antiquewhite;
+
+}
+
+.menubutton * {
+    -fx-text-fill: primaryTextColor;
+}
+
+
+.table-view{
+    -fx-background-color: transparent;
+   -fx-border-radius: 5;
+   -fx-background-radius: 5;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.table-row-cell{
+    -fx-background-color: #616161;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #424242;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}

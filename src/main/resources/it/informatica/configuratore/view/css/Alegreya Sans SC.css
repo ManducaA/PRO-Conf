@@ -1,0 +1,10 @@
+* {
+    -fx-font-family: 'Alegreya Sans SC';
+}
+#themeButton {
+    -fx-text-fill: white;
+}
+#saveButton, #exitButton {
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+}

@@ -1,0 +1,10 @@
+* {
+    -fx-font-family: 'Roboto';
+}
+#themeButton {
+    -fx-text-fill: white;
+}
+#saveButton, #exitButton {
+    -fx-text-fill: black;
+    -fx-font-size: 15px;
+}

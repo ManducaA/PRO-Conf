@@ -1,0 +1,88 @@
+* {
+    primaryBackgroundColor: #d39d3a;
+    secondaryBackgroundColor: #636363;
+
+    buttonFocusColor: dodgerblue;
+
+    primarySelectionColor: dodgerblue;
+    secondarySelectionColor: #0181d7;
+    tertiarySelectionColor: #0181d7;
+
+    imagesColor: black;
+
+    textFocusColor: white;
+    textColor: black;
+    menuColor: black;
+    primaryTextColor: #191d21;
+    secondaryTextColor: #191d21;
+
+    selectedTextColor: black;
+    lineColor: #b3b3b3;
+    separatorColor: #0181d7;
+
+    listBackgroundColor: #9fe17b;
+
+    menuBarColor: #94c7fc;
+    homeButtonsColor: #94c7fc;
+    newTextFill: #191d21;
+
+    chooseHoverColor: #dbd6d0;
+    chooseTextColor: textColor;
+    chooserBackgroundColor: buttonFocusColor;
+
+    titlefill: #191d21;		//colore per title
+
+    barcolor: lightblue;		//colore per themebutton, customize....
+
+    ideahoverbackground: black;
+    ideahoverfill: dodgerblue;
+
+    regBackground: lightblue;
+    logbackground: #2469c9;		//colore per log e linea
+
+    cambiabackground: #d3513a;
+    cambiahoverbackground: #fdee66;
+    cambiatextfill: primaryTextColor;
+
+    prossimobackground: #70d33a;
+    prossimohoverbackground: green;
+
+    confermabackground: #51a0f8;
+    confermahoverbackground: #3a70d3;
+    confermahovertextfill: antiquewhite;
+
+    esportaBackgroundColor: homeButtonsColor;
+    esportaBackgroundHoverColor: buttonFocusColor;
+    esportaTextFill: primaryTextColor;
+
+    textfieldbackground: white;
+    textfieldborder: white;
+    textfieldTextColor: blue;
+
+    euroIconColor: primaryTextColor;
+    regIconColor: primaryTextColor;
+    logIconColor: primaryTextColor;
+    logIconHoverColor: primaryBackgroundColor;
+
+    areaBackgroundHoverColor: #6cb1f9;
+    homeIconColor: antiquewhite;
+}
+
+.table-view .table-cell{
+    -fx-alignment: center;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}

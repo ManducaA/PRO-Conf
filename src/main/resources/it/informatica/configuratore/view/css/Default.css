@@ -1,0 +1,107 @@
+.dialog-pane {
+    -fx-font-family: 'Alegreya Sans SC';
+}
+.dialog-pane:header .header-panel {
+    -fx-font-size: 21;
+}
+.dialog-pane .content {
+    -fx-font-size: 17;
+}
+
+#New {
+    -fx-font-family: 'Alegreya Sans SC';
+    -fx-font-size: 14px;
+    -fx-text-fill: textFocusColor;
+}
+
+#homeButtons, #Login {
+    -fx-font-family: 'Alegreya Sans SC';
+    -fx-font-size: 13px;
+}
+#themeButton {
+    -fx-text-fill: white;
+}
+#saveButton, #exitButton {
+    -fx-text-fill: black;
+}
+
+.menu * {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Alegreya Sans SC';
+}
+
+#car1, #car11, #car2, #car21, #car3, #car31, #price1, #price2, #price3, #euro {
+    -fx-font-family: "Alegreya Sans SC";
+    -fx-font-size: 16;
+}
+
+#usernameField, #passwordField {
+    -fx-font-family: 'Roboto';
+}
+
+#idea {
+-fx-text-fill: white;
+}
+
+#idea:hover {
+    -fx-text-fill: ideahoverfill;
+}
+
+#optionalLabel, #optional1Label, #optional2Label, #optional3Label, #buttonOptional1, #buttonOptional2, #buttonOptional3 {
+    -fx-font-family: "Alegreya Sans SC";
+}
+
+#cambia, #prossimo, #priceDisplay {
+    -fx-font-family: 'Alegreya Sans SC';
+}
+#prossimo, #cambia:hover, #priceDisplay {
+    -fx-text-fill: primaryTextColor;
+}
+#Conferma {
+    -fx-font-family:  "Alegreya Sans SC";
+    -fx-font-size: 20;
+}
+#Ricambia {
+    -fx-text-fill: primaryTextColor;
+    -fx-font-weight: bold;
+}
+#Ricambia:hover {
+    -fx-text-fill: #e2e2e2;
+}
+#Ricambia2 {
+    -fx-text-fill: primaryTextColor;
+    -fx-font-weight: bold;
+}
+#Ricambia2:hover {
+    -fx-text-fill: #e2e2e2;
+}
+#Ricambia3 {
+    -fx-text-fill: primaryTextColor;
+    -fx-font-weight: bold;
+}
+#Ricambia3:hover {
+    -fx-text-fill: #e2e2e2;
+}
+
+#config {
+    -fx-font-family:  "Alegreya Sans SC";
+    -fx-font-size: 17;
+}
+
+.list-cell {
+    -fx-font-family: 'Roboto';
+    -fx-text-fill: primaryTextColor;
+}
+
+#optional1Label, #optional2Label, #optional3Label {
+    -fx-font-size: 17;
+}
+#priceDisplay, #priceIndicator {
+    -fx-font-family: 'Alegreya Sans SC';
+    -fx-font-size: 30;
+}
+
+#comingText {
+    -fx-font-family: 'Roboto';
+}
